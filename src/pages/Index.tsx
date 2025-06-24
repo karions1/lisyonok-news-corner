@@ -6,45 +6,45 @@ import { Badge } from '@/components/ui/badge';
 import { Calendar, User, BookOpen, Heart, Dumbbell, Palette, Cat, Wrench, Smile, GraduationCap } from 'lucide-react';
 
 const categories = [
-  { name: 'Досуг', slug: 'досуг', icon: Heart, color: 'bg-kidsPink' },
-  { name: 'Все для родителей', slug: 'родители', icon: User, color: 'bg-kidsAccent' },
-  { name: 'Здоровье', slug: 'здоровье', icon: Heart, color: 'bg-kidsGreen' },
-  { name: 'Учёба', slug: 'учёба', icon: BookOpen, color: 'bg-kidsPrimary' },
+  { name: 'Дозвілля', slug: 'дозвілля', icon: Heart, color: 'bg-kidsPink' },
+  { name: 'Все для батьків', slug: 'батьки', icon: User, color: 'bg-kidsAccent' },
+  { name: 'Здоров\'я', slug: 'здоровя', icon: Heart, color: 'bg-kidsGreen' },
+  { name: 'Навчання', slug: 'навчання', icon: BookOpen, color: 'bg-kidsPrimary' },
   { name: 'Спорт', slug: 'спорт', icon: Dumbbell, color: 'bg-kidsSecondary' },
-  { name: 'Творчество', slug: 'творчество', icon: Palette, color: 'bg-kidsYellow' },
-  { name: 'Животные', slug: 'животные', icon: Cat, color: 'bg-kidsPurple' },
-  { name: 'Сделай сам', slug: 'сделай-сам', icon: Wrench, color: 'bg-kidsOrange' },
-  { name: 'Шутки', slug: 'шутки', icon: Smile, color: 'bg-kidsPink' },
-  { name: 'Детская неделя в классе', slug: 'класс', icon: GraduationCap, color: 'bg-kidsAccent' },
+  { name: 'Творчість', slug: 'творчість', icon: Palette, color: 'bg-kidsYellow' },
+  { name: 'Тварини', slug: 'тварини', icon: Cat, color: 'bg-kidsPurple' },
+  { name: 'Зроби сам', slug: 'зроби-сам', icon: Wrench, color: 'bg-kidsOrange' },
+  { name: 'Жарти', slug: 'жарти', icon: Smile, color: 'bg-kidsPink' },
+  { name: 'Дитячий тиждень у класі', slug: 'клас', icon: GraduationCap, color: 'bg-kidsAccent' },
 ];
 
 const foxActivities = [
   {
-    title: 'Лисёнок занимается спортом',
+    title: 'Лисеня займається спортом',
     category: 'спорт',
     image: '🏃‍♂️',
-    description: 'Узнай, как Лисёнок стал чемпионом!',
+    description: 'Дізнайся, як Лисеня стало чемпіоном!',
     color: 'bg-kidsSecondary'
   },
   {
-    title: 'Лисёнок учится',
-    category: 'учёба', 
+    title: 'Лисеня вчиться',
+    category: 'навчання', 
     image: '📚',
-    description: 'Школьные приключения нашего героя',
+    description: 'Шкільні пригоди нашого героя',
     color: 'bg-kidsPrimary'
   },
   {
-    title: 'Лисёнок шутит',
-    category: 'шутки',
+    title: 'Лисеня жартує',
+    category: 'жарти',
     image: '😄',
-    description: 'Самые смешные истории и загадки',
+    description: 'Найсмішніші історії та загадки',
     color: 'bg-kidsPink'
   },
   {
-    title: 'Лисёнок творит',
-    category: 'творчество',
+    title: 'Лисеня творить',
+    category: 'творчість',
     image: '🎨',
-    description: 'Творческие мастер-классы и идеи',
+    description: 'Творчі майстер-класи та ідеї',
     color: 'bg-kidsYellow'
   }
 ];
@@ -61,19 +61,19 @@ const Index = () => {
             <div className="flex items-center space-x-4">
               <div className="text-6xl animate-bounce-gentle">🦊</div>
               <div>
-                <h1 className="text-4xl font-bold text-kidsPrimary">КидсВик</h1>
-                <p className="text-lg text-gray-600">Детские новости и приключения</p>
+                <h1 className="text-4xl font-bold text-kidsPrimary">КідсТиждень</h1>
+                <p className="text-lg text-gray-600">Дитячі новини та пригоди</p>
               </div>
             </div>
             <nav className="hidden md:flex space-x-6">
               <Link to="/" className="text-kidsPrimary font-semibold hover:text-kidsSecondary transition-colors">
-                Главная
+                Головна
               </Link>
               <Link to="/categories" className="text-gray-600 hover:text-kidsPrimary transition-colors">
-                Категории
+                Категорії
               </Link>
               <Link to="/about" className="text-gray-600 hover:text-kidsPrimary transition-colors">
-                О нас
+                Про нас
               </Link>
             </nav>
           </div>
@@ -84,10 +84,10 @@ const Index = () => {
       <section className="py-12">
         <div className="container mx-auto px-4 text-center">
           <h2 className="text-5xl font-bold text-gray-800 mb-4 animate-float">
-            Добро пожаловать в мир приключений! 
+            Ласкаво просимо до світу пригод! 
           </h2>
           <p className="text-xl text-gray-600 mb-8">
-            Интересные истории, полезные советы и веселые приключения вместе с Лисёнком
+            Цікаві історії, корисні поради та веселі пригоди разом з Лисеням
           </p>
           <div className="animate-wiggle inline-block text-8xl">🌟</div>
         </div>
@@ -97,7 +97,7 @@ const Index = () => {
       <section className="py-12 bg-white/50">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center mb-8 text-gray-800">
-            Выбери свою категорию
+            Обери свою категорію
           </h3>
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4">
             {categories.map((category, index) => {
@@ -130,11 +130,11 @@ const Index = () => {
         <div className="container mx-auto px-4">
           <div className="text-center mb-8">
             <h3 className="text-3xl font-bold text-gray-800 mb-4">
-              Непосредственно в...
+              Безпосередньо в...
             </h3>
             <div className="flex justify-center">
               <div className="bg-white rounded-full px-8 py-2 shadow-lg border-2 border-kidsPrimary">
-                <span className="text-kidsPrimary font-bold">Приключения Лисёнка</span>
+                <span className="text-kidsPrimary font-bold">Пригоди Лисеня</span>
               </div>
             </div>
           </div>
@@ -171,7 +171,7 @@ const Index = () => {
       <section className="py-12 bg-gradient-to-r from-kidsPrimary/10 to-kidsSecondary/10">
         <div className="container mx-auto px-4">
           <h3 className="text-3xl font-bold text-center mb-8 text-gray-800">
-            Последние новости
+            Останні новини
           </h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {/* Sample news cards */}
@@ -183,14 +183,14 @@ const Index = () => {
                   </Badge>
                   <div className="ml-auto flex items-center text-sm text-gray-500">
                     <Calendar className="w-4 h-4 mr-1" />
-                    24 июня
+                    24 червня
                   </div>
                 </div>
                 <h4 className="font-bold text-lg mb-2">
-                  Лисёнок на велосипеде
+                  Лисеня на велосипеді
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Узнай, как Лисёнок научился кататься на велосипеде и какие приключения его ждали!
+                  Дізнайся, як Лисеня навчилося кататися на велосипеді та які пригоди його чекали!
                 </p>
               </CardContent>
             </Card>
@@ -199,18 +199,18 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Badge variant="secondary" className="bg-kidsPrimary text-white">
-                    Учёба
+                    Навчання
                   </Badge>
                   <div className="ml-auto flex items-center text-sm text-gray-500">
                     <Calendar className="w-4 h-4 mr-1" />
-                    20 июня
+                    20 червня
                   </div>
                 </div>
                 <h4 className="font-bold text-lg mb-2">
-                  Первый день в школе
+                  Перший день у школі
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Волнительная история о том, как Лисёнок готовился к школе и что произошло в его первый учебный день.
+                  Хвилююча історія про те, як Лисеня готувалося до школи та що сталося в його перший навчальний день.
                 </p>
               </CardContent>
             </Card>
@@ -219,18 +219,18 @@ const Index = () => {
               <CardContent className="p-6">
                 <div className="flex items-center mb-4">
                   <Badge variant="secondary" className="bg-kidsYellow text-gray-800">
-                    Творчество
+                    Творчість
                   </Badge>
                   <div className="ml-auto flex items-center text-sm text-gray-500">
                     <Calendar className="w-4 h-4 mr-1" />
-                    22 июня
+                    22 червня
                   </div>
                 </div>
                 <h4 className="font-bold text-lg mb-2">
-                  Рисуем радугу
+                  Малюємо веселку
                 </h4>
                 <p className="text-gray-600 text-sm">
-                  Мастер-класс от Лисёнка: как нарисовать красивую радугу и создать солнечное настроение!
+                  Майстер-клас від Лисеня: як намалювати красиву веселку та створити сонячний настрій!
                 </p>
               </CardContent>
             </Card>
@@ -242,19 +242,19 @@ const Index = () => {
       <footer className="bg-gray-800 text-white py-8">
         <div className="container mx-auto px-4 text-center">
           <div className="text-4xl mb-4">🦊</div>
-          <h4 className="text-2xl font-bold mb-2">КидсВик</h4>
+          <h4 className="text-2xl font-bold mb-2">КідсТиждень</h4>
           <p className="text-gray-400 mb-4">
-            Детские новости, которые делают мир ярче!
+            Дитячі новини, які роблять світ яскравішим!
           </p>
           <div className="flex justify-center space-x-6">
             <Link to="/about" className="hover:text-kidsPrimary transition-colors">
-              О нас
+              Про нас
             </Link>
             <Link to="/contact" className="hover:text-kidsPrimary transition-colors">
-              Контакты
+              Контакти
             </Link>
             <Link to="/privacy" className="hover:text-kidsPrimary transition-colors">
-              Конфиденциальность
+              Конфіденційність
             </Link>
           </div>
         </div>

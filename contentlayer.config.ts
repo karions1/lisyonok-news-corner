@@ -7,38 +7,38 @@ export const Post = defineDocumentType(() => ({
   fields: {
     title: {
       type: 'string',
-      description: 'The title of the post',
+      description: 'Заголовок статті',
       required: true,
     },
     date: {
       type: 'date',
-      description: 'The date of the post',
+      description: 'Дата публікації',
       required: true,
     },
     category: {
       type: 'enum',
-      options: ['досуг', 'родители', 'здоровье', 'учёба', 'спорт', 'творчество', 'животные', 'сделай-сам', 'шутки', 'класс'],
-      description: 'The category of the post',
+      options: ['дозвілля', 'батьки', 'здоровя', 'навчання', 'спорт', 'творчість', 'тварини', 'зроби-сам', 'жарти', 'клас'],
+      description: 'Категорія статті',
       required: true,
     },
     excerpt: {
       type: 'string',
-      description: 'A short excerpt of the post',
+      description: 'Короткий опис статті',
       required: true,
     },
     author: {
       type: 'string',
-      description: 'The author of the post',
+      description: 'Автор статті',
       required: true,
     },
     image: {
       type: 'string',
-      description: 'The main image for the post',
+      description: 'Головне зображення для статті',
       required: false,
     },
     featured: {
       type: 'boolean',
-      description: 'Whether this post is featured',
+      description: 'Чи є ця стаття рекомендованою',
       required: false,
       default: false,
     },
