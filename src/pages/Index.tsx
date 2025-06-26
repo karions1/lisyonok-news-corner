@@ -75,6 +75,9 @@ const Index = () => {
               <Link to="/about" className="text-gray-600 hover:text-kidsPrimary transition-colors">
                 Про нас
               </Link>
+              <Link to="/contact" className="text-gray-600 hover:text-kidsPrimary transition-colors">
+                Контакти
+              </Link>
             </nav>
           </div>
         </div>
